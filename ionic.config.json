@@ -1,0 +1,7 @@
+{
+  "name": "rucksack",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
