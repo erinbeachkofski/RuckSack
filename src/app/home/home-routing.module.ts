@@ -26,6 +26,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'create',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/create/create.module').then(m => m.CreatePageModule)
+          }
+        ]
+      },
+      {
         path: 'account',
         children: [
           {
