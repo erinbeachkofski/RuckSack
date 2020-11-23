@@ -45,15 +45,13 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '../pages/search',
-        pathMatch: 'full'
+        loadChildren: () => import('../pages/search/search.module').then(m => m.SearchPageModule)
       },
     ]
   },
   {
     path: '',
-    redirectTo: '../pages/search',
-    pathMatch: 'full'
+    loadChildren: () => import('../pages/search/search.module').then(m => m.SearchPageModule)
   }
 ];
 

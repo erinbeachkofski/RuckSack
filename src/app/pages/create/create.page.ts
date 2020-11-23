@@ -12,4 +12,8 @@ export class CreatePage implements OnInit {
   ngOnInit() {
   }
 
+  onClickAddActivity() {
+    console.log("clicked add activity");
+  }
+
 }
