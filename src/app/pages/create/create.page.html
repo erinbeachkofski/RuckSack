@@ -4,37 +4,27 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="new" mode="md">
+<ion-content color="new" mode="md" scrollable="true">
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle>CREATE A CITY CARD</ion-card-subtitle>
       <ion-card-title>
-        <ion-input type="text" placeholder="Enter city name"></ion-input>
+        <ion-input id="city-input" type="text" placeholder="Enter city name"></ion-input>
       </ion-card-title>
     </ion-card-header>
 
+    <div id="add-activity-card"></div>
+
     <ion-card-content>
-      <ion-button id="activity-card" (click)="onClickAddActivity()" expand="block" shape="round">
+      <ion-button (click)="onClickAddActivity()" expand="block" shape="round">
         + Activity
       </ion-button>
     </ion-card-content>
 
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>ADD ACTIVITY</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-item>
-          <ion-input type="text" placeholder="Activity Name"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label color="new">Cost: </ion-label>
-          <ion-input type="number" placeholder="0"></ion-input>
-        </ion-item>    
-        <ion-item>
-          <ion-textarea placeholder="Additional Notes (optional)" class="ion-text-left"></ion-textarea>
-        </ion-item>        
-      </ion-card-content>
-    </ion-card>
   </ion-card>
+
+  <ion-button id="create-save-button" (click)="onClickSave()" expand="block" shape="round">
+    Save
+  </ion-button>
+
 </ion-content>

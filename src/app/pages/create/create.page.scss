@@ -2,6 +2,7 @@
 ion-content {
 
     ion-card {
+
         ion-card {
             ion-card-content {
                 width: 100%;
@@ -9,16 +10,22 @@ ion-content {
                 ion-card-subtitle {
                     font-size: 100%;
                 }
+
                 ion-card-title {
                     font-size: 125%;
                     padding: 0em;
-                    margin: 0em;
+                    margin: 0em; 
                 }
 
                 ion-item {
                     width: 100%;
+                    --background: whitesmoke;
                 }
             }
+        }
+
+        .activity-card {
+            background-color: whitesmoke;
         }
         
     }
