@@ -19,7 +19,7 @@ export class CreatePage implements OnInit {
   onClickAddActivity() {
     console.log("clicked add activity button");
     let element = document.getElementById(addActivityDivString);
-    element.innerHTML = element.innerHTML + activityCardCode;
+    element.outerHTML = activityCardCode + element.outerHTML;
   }
 
   onClickSave() {
